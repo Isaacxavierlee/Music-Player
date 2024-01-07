@@ -14,20 +14,21 @@
 </head>
 
 <body>
-      <div class="container">
-        <div class="music-player">
-          <nav>
-            <div class="circle">
-              <i class="fa-solid fa-angle-left" id="backward"></i>
-            </div>
-            <div class="circle">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </nav>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle" id="themeChange">
+          <i class="fas fa-tint" id="backward"></i>
+        </div>
 
-          <div id="songMenu" class="song-menu">
-            <!-- The content will be dynamically added here -->
-          </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars" id="songMenuButton"></i>
+        </div>
+      </nav>
+      
+      <div id="songMenu" class="song-menu">
+        <!-- The content will be dynamically added here -->
+      </div>
 
       <img src="./img/singer.jpg" class="song-img" id="songImg" alt="Singer Image">
       <h1 id="artist">Ariana Grande</h1>
@@ -43,7 +44,7 @@
         <div class="circle" onclick="prevTrack()">
           <i class="fa-solid fa-backward-step"></i>
         </div>
-        <div class="circle" onclick="playPause()">
+        <div class="circle" onclick="togglePlayPause()">
           <i class="fa-solid fa-play" id="playPause"></i>
         </div>
         <div class="circle" onclick="nextTrack()">
